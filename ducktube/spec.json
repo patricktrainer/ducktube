@@ -1,0 +1,48 @@
+{
+    "documentationUrl": "https://docs.airbyte.com/integrations/sources/video-json",
+    "connectionSpecification": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Video JSON Source Spec",
+      "type": "object",
+      "required": ["url"],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "URL of the video to process (YouTube, Vimeo, or other supported platforms)",
+          "pattern": "^https?://"
+        },
+        "target_width": {
+          "type": "integer",
+          "description": "Target width for processed frames",
+          "default": 160,
+          "minimum": 16
+        },
+        "target_height": {
+          "type": "integer",
+          "description": "Target height for processed frames",
+          "default": 90,
+          "minimum": 9
+        },
+        "mode": {
+          "type": "string",
+          "description": "Color mode for processing",
+          "enum": ["binary", "grayscale", "color"],
+          "default": "binary"
+        },
+        "threshold": {
+          "type": "integer",
+          "description": "Brightness threshold for binary mode (0-255)",
+          "default": 128,
+          "minimum": 0,
+          "maximum": 255
+        },
+        "max_duration": {
+          "type": "integer",
+          "description": "Maximum video duration in seconds (default: 10)",
+          "default": 10,
+          "minimum": 1
+        }
+      }
+    }
+  }
