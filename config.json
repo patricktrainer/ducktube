@@ -1,0 +1,16 @@
+{
+  "source":{
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "target_width": 160,
+    "target_height": 90,
+    "mode": "greyscale",
+    "threshold": 128,
+    "max_duration": 10
+  },
+  "destination":{
+    "motherduck_token": "YOUR_MOTHERDUCK_TOKEN",
+    "database": "ducktube",
+    "schema": "main",
+    "batch_size": 100000
+  }
+}
