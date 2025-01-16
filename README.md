@@ -6,6 +6,8 @@ DuckTube turns videos into queryable data using the power of DuckDB and WebAssem
 
 Because why watch videos when you can query them? 📺
 
+![DuckTube](ducktube.gif)
+
 ## 🤔 What's This All About?
 
 You know how people say "a picture is worth a thousand words"? Well, I think a video is worth a million rows in a database! 
@@ -236,3 +238,4 @@ Got ideas? We've got queries! Feel free to:
 MIT License - Do whatever you want with this code! Just don't forget to give the ducks credit. 🦆
 
 Remember: Keep Calm and Query On! 🦆✨
+
