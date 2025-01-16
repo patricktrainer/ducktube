@@ -1,8 +1,8 @@
 # 🦆 DuckTube: Where Videos Meet SQL
 
-Ever wanted to SELECT * FROM your favorite YouTube video? Now you can! 
+Ever wanted to SELECT * FROM your favorite YouTube video? Now you can!
 
-DuckTube turns videos into queryable data using the power of DuckDB and WebAssembly. 
+DuckTube turns videos into queryable data using the power of DuckDB and WebAssembly.
 
 Because why watch videos when you can query them? 📺
 
@@ -10,7 +10,7 @@ Because why watch videos when you can query them? 📺
 
 ## 🤔 What's This All About?
 
-You know how people say "a picture is worth a thousand words"? Well, I think a video is worth a million rows in a database! 
+You know how people say "a picture is worth a thousand words"? Well, I think a video is worth a million rows in a database!
 
 DuckTube breaks down videos into their pixel components and stores them in DuckDB, letting you do wild things like:
 
@@ -108,7 +108,7 @@ FROM rick_stats;
 
 ## 🎮 Web Player Features
 
-The web player isn't just a player - it's a time machine for your pixels! 
+The web player isn't just a player - it's a time machine for your pixels!
 
 Built with React and powered by DuckDB's WASM client:
 
@@ -187,6 +187,8 @@ erDiagram
    ORDER BY frequency DESC;
    ```
 
+![RGB Party](image.png)
+
 3. **Scene Change Detector**
 
    ```sql
@@ -238,4 +240,3 @@ Got ideas? We've got queries! Feel free to:
 MIT License - Do whatever you want with this code! Just don't forget to give the ducks credit. 🦆
 
 Remember: Keep Calm and Query On! 🦆✨
-
