@@ -69,7 +69,7 @@ const MotherDuckVideoPlayer = () => {
           CASE 
             WHEN MAX(r) IS NOT NULL THEN 'color'
             WHEN MAX(value) <= 1 THEN 'binary'
-            ELSE 'greyscale'
+            ELSE 'grayscale'
           END as mode
         FROM ducktube.main.video_frames
         WHERE video_url = '${videoUrl}'
@@ -131,7 +131,7 @@ const MotherDuckVideoPlayer = () => {
       if (metadata.mode === 'binary') {
         ctx.fillStyle = pixel.value === 1 ? '#000000' : '#FFFFFF';
       }
-      else if (metadata.mode === 'greyscale') {
+      else if (metadata.mode === 'grayscale') {
         const value = pixel.value;
         ctx.fillStyle = `rgb(${value},${value},${value})`;
       }
